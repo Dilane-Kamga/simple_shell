@@ -2,7 +2,7 @@
 
 /**
 * countArgs - count the number of arguments
-* @args: input array of strings
+* @args: double pointer to char; input array of strings
 * Return: number of strings
 */
 int countArgs(char **args)
@@ -16,7 +16,7 @@ int countArgs(char **args)
 
 /**
 * _atoi - change string to an integer
-* @s: input string
+* @s: pointer to char; input string
 * Return: -1 if it's not a valid number, else the converted number
 */
 int _atoi(char *s)

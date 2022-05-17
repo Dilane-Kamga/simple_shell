@@ -2,8 +2,8 @@
 
 /**
  * _getenv - retrieves env variable that matches input string
- * @input: input string
- * @environ: local environmental variables
+ * @input: pointer to input string
+ * @environ: double pointer to local environmental variables
  * Return: string of env variable
  */
 char *_getenv(char *input, char **environ)

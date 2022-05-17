@@ -2,7 +2,7 @@
 
 /**
  * updateOld - updates OLDPWD to current PWD
- * @build: input build
+ * @build: pointer to config data type; input build
  * Return: index in linked list of PWD on success -
  * If PWD or OLDPWD does not exist in environ vars,
  * return -1
@@ -36,8 +36,8 @@ int updateOld(config *build)
 
 /**
  * updateCur - updates PWD to accurately reflect current directory
- * @build: input build
- * @index: index in linked list of where to insert PWD env var
+ * @build: pointer to config data type; input build
+ * @index: int; index in linked list of where to insert PWD env var
  * Return: true on success, false on failure
  */
 _Bool updateCur(config *build, int index)
